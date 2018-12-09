@@ -3,7 +3,7 @@ FROM openjdk:8-jre-alpine
 # Add Maintainer Info
 LABEL maintainer="houssemeddine.khaldi@ensi-uma.tn"
 # Define environment variables
-ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \
+ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \ 
 # Set the working directory to /app
 WORKDIR /app
 # Copy the executable into the container at /app

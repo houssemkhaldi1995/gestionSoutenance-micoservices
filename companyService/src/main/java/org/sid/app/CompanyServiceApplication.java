@@ -2,12 +2,12 @@ package org.sid.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
-@EnableCircuitBreaker
+@EnableDiscoveryClient
 @SpringBootApplication
 public class CompanyServiceApplication {
 

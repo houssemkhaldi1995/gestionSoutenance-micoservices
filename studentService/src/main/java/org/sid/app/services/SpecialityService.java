@@ -5,7 +5,6 @@ import java.util.stream.Collectors;
 
 import org.sid.app.dao.SpecialityRepository;
 import org.sid.app.dto.SpecialityDto;
-import org.sid.app.entities.Speciality;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

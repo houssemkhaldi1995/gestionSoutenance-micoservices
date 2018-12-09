@@ -1,9 +1,10 @@
 package org.sid.app.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
-import java.util.Set;
 
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -25,8 +26,9 @@ public class Defense implements Serializable {
 	private Long defenseId;
 	private Date date;
 	private String classroom;
-
-	private Set<Long> juriesId;
+	
+	@ElementCollection(targetClass=Long.class)
+	private Collection<Long> juriesId;
 	private Long studentId;
 
 }
